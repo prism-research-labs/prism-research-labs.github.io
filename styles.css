@@ -1,33 +1,69 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some basic elements */
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
+/* Basic body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+/* Container for the content */
 .container {
+    width: 90%;
     max-width: 800px;
     margin: auto;
-    background-color: #ffffff;
+    background: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Styling the main heading */
 h1 {
-    color: #333333;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+/* Agenda styling */
 .agenda {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
+/* Individual agenda item styling */
 .agenda-item {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eeeeee;
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #007bff;
 }
 
+.agenda-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.agenda-item p {
+    margin-bottom: 0;
+}
+
+/* Styling for the last agenda item to remove the bottom margin */
 .agenda-item:last-child {
-    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Additional responsiveness */
+@media (min-width: 600px) {
+    .container {
+        padding: 30px;
+    }
 }
